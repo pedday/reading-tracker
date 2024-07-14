@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reading tracker</title>
+
+    <link rel="stylesheet" href="mainpage.css">
+    <script src="mainpage.js"></script>
+    <link rel="icon" type="image/x-icon" href="book icon2.png">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li>
+                <a href=""><img src="profile.svg" alt="profile"></a>
+            </li>
+    
+            <li>
+                <a href="streak.html">streak</a>
+            </li>
+    
+            <li>
+                <a target="_blank" href="https://www.goodreads.com/list/show/9440.100_Best_Books_of_All_Time_The_World_Library_List">suggestions</a>
+            </li>
+            <li>
+                <a href="library.html">library</a>
+            </li>
+        </ul>
+    </nav>
+    <br>
+    <br>
+    
+    <div class="bookdiv">
+        <input type="text" placeholder="enter the book name" id="bookname">
+        <input type="text" placeholder="pages progress 23/350" id="pages">
+        <br>
+        <br>
+        <button id="save" onclick="savefunction()">save</button>
+        <button id="done">done</button>
+        <button id="delete" onclick="deletefunction()"> delete</button>
+    </div>
+    <br>
+    <div id="newbooks"></div>
+    <br>
+    <button id="add" onclick="newdivfuntion()"> + add new book</button>
+</body>
+</html>
